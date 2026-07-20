@@ -1,0 +1,73 @@
+div {
+  border: 2px solid red;
+  /* padding: 10px; */
+}
+
+section {
+  border: 2px solid blue;
+}
+
+body {
+  margin: 10px;
+  background-color: black;
+}
+
+#home {
+  background-color: #483355;
+  padding-bottom: 1cm;
+  margin-left: -1cm;
+  margin-right: -1cm;
+  margin-top: -1cm;
+  padding-top: 2cm;
+  padding-bottom: 6%;
+}
+
+.profile-contact {
+  background-color: #483355;
+  padding-bottom: 1cm;
+  margin-left: -1cm;
+  margin-right: -1cm;
+  margin-top: -1cm;
+  /* padding-top: 2cm;
+  padding-bottom: 6%; */
+  font-size: small;
+  /* height: 4px; */
+}
+
+.profile-contact-name {
+  background-color: #483355;
+  padding-bottom: 1cm;
+  margin-left: -1cm;
+  margin-right: -1cm;
+  margin-top: -1cm;
+  padding-top: 2cm;
+  padding-bottom: 6%;
+  font-size: large;
+  /* height: 4px; */
+}
+
+header {
+  /* font-size: 30px; */
+  color: rgb(240, 234, 245);
+  float: inline-start;
+  padding-left: 2cm;
+  height: 100px;
+}
+
+/* Navigation Bar Container*/
+
+.topdiv {
+  float: right;
+  padding-right: 1cm;
+}
+
+/* Navigation Bar Buttons */
+.topmenu {
+  color: lightgray;
+  background-color: #483355;
+  margin: 10px;
+  padding: 10px;
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 1mm;
+}
