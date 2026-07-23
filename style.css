@@ -137,6 +137,7 @@ Section styles used to highlight current section .section {
 }
 body {
   margin: 10px;
+  background-color: whitesmoke;
 }
 
 /* Section with styling for projects section*/
