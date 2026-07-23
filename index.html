@@ -7,11 +7,12 @@
       src="https://kit.fontawesome.com/21fe8ec0e6.js"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
   </head>
-  <body>
+  <body onload="hookUpNavEventHandlers()">
     <div class="header-container">
-      <div class="divLeft">
-        <h2>Chris Yager</h2>
+      <div class="divHeaderLeft">
+        <h2 class="header-name">Chris Yager</h2>
         <div class="divProfileContact">
           <i class="fa-solid fa-envelope"></i>
           <p class="profile-contact-info">joe.blow@hotmail.com</p>
@@ -22,14 +23,147 @@
         </div>
       </div>
 
-      <!-- <nav> -->
-      <div class="divRight">
-        <a href="#temperature"><button class="topmenu">Skills</button></a>
-        <a href="#weight"><button class="topmenu">Projects</button></a>
-        <a href="#distance"><button class="topmenu">Recommendations</button></a>
+      <div class="divHeaderRight">
+        <div class="navButtonContainer">
+          <a href="#aboutme"><button class="topmenu">About Me</button></a>
+          <a href="#skills"><button class="topmenu">Skills</button></a>
+          <a href="#projects"><button class="topmenu">Projects</button></a>
+          <a href="#recommendations"
+            ><button class="topmenu">Recommendations</button></a
+          >
+        </div>
       </div>
     </div>
 
-    <div class="introduction-container"></div>
+    <section id="aboutme">
+      <div class="introduction-container">
+        <div class="divIntroductionLeft">
+          <img
+            src="./images/portfolio-picture.jpg"
+            width="100%"
+            height="100%"
+          />
+        </div>
+        <div class="divIntroductionRight">
+          <h3>Hi, I'm Dave Schnieder</h3>
+          <p margin-left="20px">
+            I am a full stack developer with many years of experience. In my
+            earlier career I developed mostly backend applications. Recently I
+            have focus on full stack development.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="card-container">
+        <div class="card">
+          <img src="./images/java.jpg" alt="Image" height="25px" width="25px" />
+          <div class="card-row2">Java</div>
+          <div class="card-row3">10 years experience</div>
+        </div>
+
+        <div class="card">
+          <img src="/images/javascript.jpg" alt="Image" />
+          <div class="card-row2">JavaScript</div>
+          <div class="card-row3">5 years experience</div>
+        </div>
+
+        <div class="card">
+          <img src="./images/SqlServer.jpg" alt="Image" />
+          <div class="card-row2">SQL Server</div>
+          <div class="card-row3">20 years experience</div>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-container">
+        <div class="project-header">ChatBot</div>
+        <ul>
+          <li class="project-details-list-item">
+            Developed a Chatbot application
+          </li>
+        </ul>
+        <!-- <div class="project-details">Developed chatbot</div> -->
+      </div>
+      <div class="project-container">
+        <div class="project-header">Construction Accounting</div>
+        <ul>
+          <li class="project-details-list-item">
+            Developed construction accounting program
+          </li>
+        </ul>
+      </div>
+      <div class="project-container">
+        <div class="project-header">Fashion Website</div>
+        <ul>
+          <li class="project-details-list-item">Developed Fashion Website</li>
+        </ul>
+      </div>
+    </section>
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div class="card-container">
+        <div class="card">
+          <div class="card-row3">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-row3">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+            faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
+            pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
+            tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
+            Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
+            hendrerit semper vel class aptent taciti sociosqu. Ad litora
+            torquent per conubia nostra inceptos himenaeos.
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-row3">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+            faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
+            pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
+            tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
+            Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
+            hendrerit semper vel class aptent taciti sociosqu. Ad litora
+            torquent per conubia nostra inceptos himenaeos.
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="add-recommendation">
+      <h2>Leave a Recommendation</h2>
+      <div class="add-recommendation-container">
+        <input
+          placeholder="Name (optional)"
+          type="text"
+          id="recommendation-name"
+          class="recommendation-input"
+        />
+        <br />
+        <textarea
+          class="recommendation-input"
+          placeholder="Describe yourself here..."
+          rows="10"
+          cols="50"
+        ></textarea>
+        <br />
+        <button class="recommendation-input" id="add-recommendation">
+          Submit
+        </button>
+        <br />
+      </div>
+    </section>
   </body>
 </html>

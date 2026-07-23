@@ -1,57 +1,179 @@
 h2 {
   height: 20px;
-  margin: 10px;
+  margin: 20px;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+Section styles used to highlight current section .section {
+  transition: background-color 0.4s ease;
+}
+
+.section.active {
+  background-color: #fffa9e; /* light highlight */
+  outline: 3px solid #f4d742;
+}
+
+/* Section with styling for header */
+
+.header-name {
+  font-size: xx-large;
+  height: 20px;
+  margin: 20px;
+  margin-bottom: 30px;
 }
 
 .profile-contact-info {
   font-size: 18px;
-  /* margin-left: 20px; */
-  margin-top: 0;
   margin-left: 5px;
+  margin-top: 0;
 }
-
-.divLeft {
-  width: 100px;
+.divHeaderLeft {
   display: block;
   float: left;
-  border: 2px solid red;
   width: 48%;
   height: 95%;
+  /* border: 2px solid red; */
 }
-
 .divProfileContact {
   display: flex;
   margin-top: 5px;
-  margin-left: 20px;
+  margin-left: 30px;
   height: 20px;
 }
-
-.divRight {
+.divHeaderRight {
   height: 95%;
   display: flex;
   justify-content: center;
-  float: right;
-  border: 2px solid red;
   width: 48%;
-  background-color: blue;
   color: white;
   padding-right: 1cm;
+  /* border: 2px solid red; */
+  /* background-color: blue; */
+}
+.navButtonContainer {
+  padding-top: 25px;
 }
 
 .topmenu {
   color: lightgray;
   background-color: #483355;
-  margin: 25px;
+  margin: 10px;
   padding: 10px;
-  font-size: 20px;
+  font-size: 13px;
   text-decoration: none;
   border-radius: 1mm;
+  cursor: pointer;
+  /* height: 20px; */
+}
+.header-container {
+  height: 140px;
+  /* background-color: green; */
 }
 
-.header-container {
+/* Section with styling for profile introduction section */
+.introduction-container {
+  height: 300px;
+  /* background-color: green; */
+}
+.divIntroductionLeft {
+  display: block;
+  float: left;
+  width: 30%;
+  height: 95%;
+  /* border: 2px solid red; */
+  /* background-color: yellow; */
+}
+.divIntroductionRight {
+  height: 95%;
+  justify-content: center;
+  float: right;
+  width: 65%;
+  padding-right: 1cm;
+  /* border: 2px solid red; */
+  /* background-color: lightblue; */
+}
+
+/* Section with styling for skills section */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: left;
+  width: 99%;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  /* border: 3px solid green; */
+}
+.card {
+  max-width: 400px;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  padding: 10px;
+  align-items: center;
+  margin-right: 25px;
+  /* border: 1px solid black; */
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+}
+.card img {
+  width: 100px;
   height: 100px;
-  background-color: green;
+  object-fit: cover;
+  /* border: 2px solid black; */
+}
+.card-row2,
+.card-row3 {
+  margin-top: 10px;
+  font-size: 16px;
 }
 body {
   margin: 10px;
+}
+
+/* Section with styling for projects section*/
+.project-container {
+  gap: 20px;
+  justify-content: left;
+  width: 99%;
+  padding: 20px;
+  /* border: 3px solid purple; */
+}
+.project-header {
+  font-size: large;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-left: 50px;
+}
+.project-details {
+  font-size: small;
+  margin-bottom: 10px;
+  background-color: blue;
+}
+
+.project-details-list-item {
+  margin-left: 50px;
+}
+
+/* Section with styling for add recommendation section*/
+.add-recommendation-container {
+  margin-bottom: 50px;
+  align-items: flex-end;
+  gap: 20px;
+  justify-content: left;
+  width: 99%;
+  padding: 10px;
+  /* border: 3px solid purple; */
+}
+.recommendation-input {
+  margin-bottom: 20px;
+  margin-left: 50px;
 }

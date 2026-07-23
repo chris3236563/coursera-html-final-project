@@ -1,3 +1,23 @@
+function hookUpNavEventHandlers() {
+  console.log("In hook up events function");
+  document.querySelectorAll('a[href^="#"]').forEach((link) => {
+    console.log("found an href " + link.nodeName);
+    link.addEventListener("click", function () {
+      const target = document.querySelector(this.getAttribute("href"));
+
+      // Remove active class from all sections
+      document.querySelectorAll(".section").forEach((sec) => {
+        sec.classList.remove("active");
+      });
+
+      // Add active class to the clicked section
+      if (target) {
+        target.classList.add("active");
+      }
+    });
+  });
+}
+
 function displaySection(sectionId) {
   console.log("section to display: " + sectionId);
   const sections = document.querySelectorAll("#all-sections *");
