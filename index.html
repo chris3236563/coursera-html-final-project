@@ -104,7 +104,7 @@
     </section>
     <section id="recommendations">
       <h2>Recommendations</h2>
-      <div class="card-container">
+      <div class="card-container" id="recommendationList">
         <div class="card">
           <div class="card-row3">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -153,13 +153,18 @@
         />
         <br />
         <textarea
+          id="recommendationMessageId"
           class="recommendation-input"
           placeholder="Describe yourself here..."
           rows="10"
           cols="50"
         ></textarea>
         <br />
-        <button class="recommendation-input" id="add-recommendation">
+        <button
+          class="recommendation-input"
+          id="add-recommendation"
+          onclick="addRecommendation()"
+        >
           Submit
         </button>
         <br />

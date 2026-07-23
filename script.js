@@ -18,6 +18,21 @@ function hookUpNavEventHandlers() {
   });
 }
 
+function addRecommendation() {
+  const recommendationList = document.getElementById("recommendationList");
+  const nameValue = document.getElementById("recommendation-name");
+  const recommendationContent = document.getElementById(
+    "recommendationMessageId"
+  );
+  const newRecommendation = document.createElement("div");
+  newRecommendation.setAttribute("class", "card");
+  newRecommendation.innerHTML = recommendationContent.value;
+  recommendationList.appendChild(newRecommendation);
+  nameValue.value = "";
+  recommendationContent.value = "";
+  return newRecommendation;
+}
+
 function displaySection(sectionId) {
   console.log("section to display: " + sectionId);
   const sections = document.querySelectorAll("#all-sections *");
