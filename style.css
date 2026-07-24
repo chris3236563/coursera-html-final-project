@@ -21,6 +21,17 @@ Section styles used to highlight current section .section {
 
 /* Section with styling for header */
 
+.home-icon {
+  position: fixed;
+  bottom: 20px; /* or top: 20px */
+  right: 20px; /* or left: 20px */
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
 .profile_name {
   font-size: xx-large;
   height: 20px;
