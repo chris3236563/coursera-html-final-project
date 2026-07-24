@@ -10,15 +10,22 @@ h2 {
   margin-top: 50px;
 }
 
+.home-container {
+  height: 30px;
+  background-color: green;
+  /* position: fixed; */
+}
+
 .iconbutton {
   position: fixed;
-  bottom: 20px; /* or top: 20px */
-  right: 20px; /* or left: 20px */
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  /* opacity: 0.8;
-  transition: opacity 0.2s; */
+  top: 20px;
+  right: 20px;
+  background: whitesmoke;
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  text-decoration: none;
+  z-index: 9999;
 }
 
 /* #region header section */
