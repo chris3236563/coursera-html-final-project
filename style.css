@@ -10,12 +10,7 @@ h2 {
   margin-top: 50px;
 }
 
-.home-container {
-  height: 30px;
-  background-color: green;
-  /* position: fixed; */
-}
-
+/* #region home button */
 .iconbutton {
   position: fixed;
   top: 20px;
@@ -27,6 +22,13 @@ h2 {
   text-decoration: none;
   z-index: 9999;
 }
+
+.iconbutton:hover {
+  text-decoration: underline;
+  font-weight: bold;
+  transform: translateY(-5px);
+}
+/* #endregion */
 
 /* #region header section */
 
