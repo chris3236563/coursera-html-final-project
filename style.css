@@ -10,14 +10,18 @@ h2 {
   margin-top: 50px;
 }
 
-Section styles used to highlight current section .section {
-  transition: background-color 0.4s ease;
+.iconbutton {
+  position: fixed;
+  bottom: 20px; /* or top: 20px */
+  right: 20px; /* or left: 20px */
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  /* opacity: 0.8;
+  transition: opacity 0.2s; */
 }
 
-.section.active {
-  background-color: #fffa9e; /* light highlight */
-  outline: 3px solid #f4d742;
-}
+/* #region header section */
 
 /* Section with styling for header */
 
@@ -37,6 +41,7 @@ Section styles used to highlight current section .section {
   height: 20px;
   margin: 20px;
   margin-bottom: 30px;
+  background-color: whitesmoke;
 }
 
 .profile-contact-info {
@@ -93,6 +98,9 @@ Section styles used to highlight current section .section {
   /* background-color: green; */
 }
 
+/* #endregion */
+
+/* #region introduction section */
 /* Section with styling for profile introduction section */
 .introduction-container {
   height: 300px;
@@ -115,7 +123,9 @@ Section styles used to highlight current section .section {
   /* border: 2px solid red; */
   /* background-color: lightblue; */
 }
+/* #endregion */
 
+/* #region skills section */
 /* Section with styling for skills section */
 .skill {
   display: flex;
@@ -128,7 +138,35 @@ Section styles used to highlight current section .section {
   margin-left: 50px;
   /* border: 3px solid green; */
 }
-.card {
+
+.skill-card {
+  gap: 20px;
+  justify-content: left;
+  /* width: 99%; */
+  padding: 15px;
+  /* border: 3px solid purple; */
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+}
+.skill-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  /* border: 2px solid black; */
+}
+.skill-card-row2,
+.skill-card-row3 {
+  margin-top: 10px;
+  font-size: 16px;
+}
+/* #endregion */
+
+/* #region recommendation section */
+
+.recommendation {
   max-width: 400px;
   background: white;
   border-radius: 12px;
@@ -137,23 +175,16 @@ Section styles used to highlight current section .section {
   flex-direction: column;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  padding: 10px;
+  padding: 15px;
   align-items: center;
-  margin-right: 25px;
-  /* border: 1px solid black; */
+  border: 1px solid black;
 }
-.card:hover {
+.recommendation:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
 }
-.card img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  /* border: 2px solid black; */
-}
-.card-row2,
-.card-row3 {
+
+.recommendation-content {
   margin-top: 10px;
   font-size: 16px;
 }
@@ -170,30 +201,6 @@ Section styles used to highlight current section .section {
   /* border: 3px solid green; */
 }
 
-/* Section with styling for projects section*/
-.project {
-  gap: 20px;
-  justify-content: left;
-  width: 99%;
-  padding: 20px;
-  /* border: 3px solid purple; */
-}
-.project-header {
-  font-size: large;
-  font-weight: bold;
-  margin-bottom: 10px;
-  margin-left: 50px;
-}
-.project-details {
-  font-size: small;
-  margin-bottom: 10px;
-  background-color: blue;
-}
-
-.project-details-list-item {
-  margin-left: 50px;
-}
-
 /* Section with styling for add recommendation section*/
 .add-recommendation-container {
   margin-bottom: 50px;
@@ -208,3 +215,31 @@ Section styles used to highlight current section .section {
   margin-bottom: 20px;
   margin-left: 50px;
 }
+
+/* #endregion */
+
+/* #region projects section */
+/* Section with styling for projects section*/
+.project-card {
+  gap: 20px;
+  justify-content: left;
+  width: 99%;
+  padding: 15px;
+  /* border: 3px solid purple; */
+}
+.project-card-header {
+  font-size: large;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-left: 40px;
+}
+.project-card-details {
+  font-size: small;
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
+
+.project-details-list-item {
+  margin-left: 50px;
+}
+/* #endregion */
