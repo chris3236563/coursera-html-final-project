@@ -12,7 +12,7 @@
   <body onload="hookUpNavEventHandlers()">
     <div class="header-container">
       <div class="divHeaderLeft">
-        <h2 class="header-name">David Schnieder</h2>
+        <h2 class="profile_name">David Tilden</h2>
         <div class="divProfileContact">
           <i class="fa-solid fa-envelope"></i>
           <p class="profile-contact-info">joe.blow@hotmail.com</p>
@@ -24,10 +24,12 @@
       </div>
 
       <div class="divHeaderRight">
-        <div class="navButtonContainer">
+        <div class="navbar">
           <a href="#aboutme"><button class="topmenu">About Me</button></a>
+          <a href="#projects"
+            ><button class="topmenu">Project Details</button></a
+          >
           <a href="#skills"><button class="topmenu">Skills</button></a>
-          <a href="#projects"><button class="topmenu">Projects</button></a>
           <a href="#recommendations"
             ><button class="topmenu">Recommendations</button></a
           >
@@ -45,7 +47,7 @@
           />
         </div>
         <div class="divIntroductionRight">
-          <h3>Hi, I'm Dave Schnieder</h3>
+          <h3>Hi, I'm David Tilden</h3>
           <p margin-left="20px">
             I am a full stack developer with many years of experience. In my
             earlier career I developed mostly backend applications. Recently I
@@ -54,9 +56,53 @@
         </div>
       </div>
     </section>
+    <section id="projects">
+      <h2>Project Details</h2>
+      <div class="project-container">
+        <div class="project-header">Scheduler</div>
+        <ul>
+          <li class="project-details-list-item">
+            Wrote a scheduling application for use in dentist office
+          </li>
+        </ul>
+      </div>
+      <div class="project-container">
+        <div class="project-header">Construction Accounting</div>
+        <ul>
+          <li class="project-details-list-item">
+            Developed construction accounting program
+          </li>
+        </ul>
+      </div>
+      <div class="project-container">
+        <div class="project-header">Admin Website</div>
+        <ul>
+          <li class="project-details-list-item">
+            Developed Admin Website for use by system admins.
+          </li>
+        </ul>
+      </div>
+      <div class="project-container">
+        <div class="project-header">Data Publishing</div>
+        <ul>
+          <li class="project-details-list-item">
+            Design and Develop publishing pathway for major content provider.
+          </li>
+        </ul>
+      </div>
+      <div class="project-container">
+        <div class="project-header">Inventory Control</div>
+        <ul>
+          <li class="project-details-list-item">
+            Develop client/server application for inventory control along with
+            estimating. Track shipping, Order Entry, etc.
+          </li>
+        </ul>
+      </div>
+    </section>
     <section id="skills">
       <h2>Skills</h2>
-      <div class="card-container">
+      <div class="skill">
         <div class="card">
           <img src="./images/java.jpg" alt="Image" height="25px" width="25px" />
           <div class="card-row2">Java</div>
@@ -74,37 +120,22 @@
           <div class="card-row2">SQL Server</div>
           <div class="card-row3">20 years experience</div>
         </div>
-      </div>
-    </section>
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="project-container">
-        <div class="project-header">ChatBot</div>
-        <ul>
-          <li class="project-details-list-item">
-            Developed a Chatbot application
-          </li>
-        </ul>
-        <!-- <div class="project-details">Developed chatbot</div> -->
-      </div>
-      <div class="project-container">
-        <div class="project-header">Construction Accounting</div>
-        <ul>
-          <li class="project-details-list-item">
-            Developed construction accounting program
-          </li>
-        </ul>
-      </div>
-      <div class="project-container">
-        <div class="project-header">Fashion Website</div>
-        <ul>
-          <li class="project-details-list-item">Developed Fashion Website</li>
-        </ul>
+
+        <div class="card">
+          <img src="./images/Python.jpg" alt="Image" />
+          <div class="card-row2">Python</div>
+          <div class="card-row3">5 years experience</div>
+        </div>
+        <div class="card">
+          <img src="./images/c++.jpg" alt="Image" />
+          <div class="card-row2">C++</div>
+          <div class="card-row3">10 years experience</div>
+        </div>
       </div>
     </section>
     <section id="recommendations">
       <h2>Recommendations</h2>
-      <div class="card-container" id="recommendationList">
+      <div class="recommendation-container" id="recommendationList">
         <div class="card">
           <div class="card-row3">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

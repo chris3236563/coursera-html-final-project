@@ -19,6 +19,7 @@ function hookUpNavEventHandlers() {
 }
 
 function addRecommendation() {
+  showPopup(true);
   const recommendationList = document.getElementById("recommendationList");
   const nameValue = document.getElementById("recommendation-name");
   const recommendationContent = document.getElementById(
@@ -31,6 +32,10 @@ function addRecommendation() {
   nameValue.value = "";
   recommendationContent.value = "";
   return newRecommendation;
+}
+
+function showPopup(someParam) {
+  return someParam;
 }
 
 function displaySection(sectionId) {
